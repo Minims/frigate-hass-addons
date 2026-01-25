@@ -56,6 +56,8 @@ tmpfs: true
 full_access: false
 privileged:
   - PERFMON
+environment:
+  GO2RTC_ALLOW_ARBITRARY_EXEC: "true"
 schema:
   plus_api_key: password?
 services:
