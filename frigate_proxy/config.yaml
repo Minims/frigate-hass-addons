@@ -15,10 +15,16 @@ ingress_port: 5000
 ingress_entry: /
 panel_admin: false
 ports:
+  8555/tcp: 8555
+  8555/udp: 8555
+  8554/tcp: 8554
+  8971/tcp: 8971
   5000/tcp: 5000
+  1984/tcp: 1984
+  1935/tcp: 1935
 ports_description:
   5000/tcp: Web interface (not required for Home Assistant Ingress)
-host_network: false
+host_network: true
 devices: []
 usb: false
 tmpfs: false
